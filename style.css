@@ -1,0 +1,51 @@
+body {
+	height: 100vh;
+}
+
+header {
+	margin-bottom: 2.5rem;
+}
+
+main {
+	padding-bottom: 7.5rem;
+}
+
+.todo {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 2.5em;
+	margin: 0.5em 0;
+	align-items: center;
+	font-family: "Montserrat", sans-serif;
+}
+
+.todo input,
+.todo p {
+	margin: 0;
+	padding: 0;
+}
+
+.todo input:checked ~ p {
+	text-decoration: line-through;
+	font-style: italic;
+	color: grey;
+}
+
+footer {
+	height: 5rem;
+	width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		margin-bottom: 1.25rem;
+	}
+
+	.todo {
+		padding: 0;
+	}
+
+	.todo p {
+		max-width: 60%;
+	}
+}
